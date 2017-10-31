@@ -17,7 +17,7 @@
   (add-hook 'slime-repl-mode-hook #'smartparens-mode)
   :config
   (slime-setup)
-  (load "/home/beetleman/.roswell/lisp/quicklisp/clhs-use-local.el" t))
+  (load "/home/h3ra/.roswell/lisp/quicklisp/clhs-use-local.el" t))
 
 
 (provide 'setup-cl)

@@ -11,7 +11,10 @@
 
 (require 'settings)
 (setq server-socket-dir "~/.emacs.d/server")
-
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
+(set-frame-parameter (selected-frame) 'alpha '(95 . 50))
+(add-to-list 'default-frame-alist '(alpha . (95 . 50)))
+(load-theme 'darkEarth t)
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
