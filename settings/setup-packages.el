@@ -10,6 +10,7 @@
                         solidity-mode
                         toml-mode
                         yaml-mode
+						rainbow-mode
                         markdown-mode
                         scpaste))
 
