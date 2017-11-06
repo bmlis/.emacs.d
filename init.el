@@ -11,6 +11,7 @@
 
 (require 'settings)
 (global-linum-mode t)
+(add-hook 'prog-mode-hook 'rainbow-mode)
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
 
 ;; Transparency
