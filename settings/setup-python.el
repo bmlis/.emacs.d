@@ -1,5 +1,6 @@
 (require 'use-package)
 
+
 (use-package anaconda-mode
   :ensure t
   :commands anaconda-mode
@@ -7,6 +8,11 @@
   :init
   (add-hook 'python-mode-hook 'anaconda-mode)
   (add-hook 'python-mode-hook 'eldoc-mode))
+
+(use-package py-isort
+  :ensure t
+  :init
+  (add-hook 'before-save-hook 'py-isort-before-save))
 
 (use-package company-anaconda
   :ensure t

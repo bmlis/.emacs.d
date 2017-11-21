@@ -15,8 +15,8 @@
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
 
 ;; Transparency
-(set-frame-parameter (selected-frame) 'alpha '(95 . 50))
-(add-to-list 'default-frame-alist '(alpha . (95 . 50)))
+(set-frame-parameter (selected-frame) 'alpha '(92 . 50))
+(add-to-list 'default-frame-alist '(alpha . (92 . 50)))
 
 (setq backup-directory-alist
       `((".*" . ,temporary-file-directory)))

@@ -37,6 +37,7 @@
                         :background "red"
                         :underline nil))
   (add-hook 'flycheck-mode-hook 'flycheck-load-config)
+  (add-hook 'python-mode-hook #'(lambda () (setq flycheck-checker 'python-pylint)))
   :init
   (global-flycheck-mode))
 
