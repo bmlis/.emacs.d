@@ -23,6 +23,8 @@
 (setq auto-save-file-name-transforms
       `((".*" ,temporary-file-directory t)))
 
+(global-unset-key (kbd "C-z"))
+
 (fringe-helper-define 'git-gutter-fr:modified nil
   "........"
   "........"
