@@ -5,10 +5,10 @@
   :ensure t
   :diminish smartparens-mode
   :init
-  (use-package evil-smartparens
-    :load-path "site-lisp/evil-smartparens"
-    :diminish evil-smartparens-mode
-    :config (add-hook 'smartparens-enabled-hook #'evil-smartparens-mode))
+  ;; (use-package evil-smartparens
+  ;;   :load-path "site-lisp/evil-smartparens"
+  ;;   :diminish evil-smartparens-mode
+  ;;   :config (add-hook 'smartparens-enabled-hook #'evil-smartparens-mode))
   (use-package smartparens-config
     :init
     (smartparens-global-mode)

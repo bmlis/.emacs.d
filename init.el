@@ -3,7 +3,6 @@
 ;; just comment it out by adding a semicolon to the start of the line.
 ;; You may delete these explanatory comments.
 (package-initialize)
-
 ;; Settings
 (defvar settings-dir
   (expand-file-name "settings" user-emacs-directory))
@@ -23,6 +22,8 @@
 (setq auto-save-file-name-transforms
       `((".*" ,temporary-file-directory t))
 (load-theme 'my-tao t)
+
+(setq vc-handled-backends ())
 
 (global-unset-key (kbd "C-z"))
 
