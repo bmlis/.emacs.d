@@ -11,7 +11,7 @@
 (require 'settings)
 (global-linum-mode t)
 (add-hook 'prog-mode-hook 'rainbow-mode)
-(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
 
 ;; Transparency
 (set-frame-parameter (selected-frame) 'alpha '(92 . 50))
@@ -20,7 +20,7 @@
 (setq backup-directory-alist
       `((".*" . ,temporary-file-directory)))
 (setq auto-save-file-name-transforms
-      `((".*" ,temporary-file-directory t))
+      `((".*" ,temporary-file-directory t)))
 (load-theme 'my-tao t)
 
 (setq vc-handled-backends ())
@@ -36,6 +36,7 @@
   "........"
   "........"
   "........")
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -60,3 +61,5 @@
  '(rainbow-delimiters-depth-5-face ((t (:foreground "dark goldenrod"))))
  '(rainbow-delimiters-depth-6-face ((t (:foreground "dark olive green"))))
  '(rainbow-delimiters-depth-7-face ((t (:foreground "khaki3")))))
+(provide 'init)
+;;; init.el ends here
