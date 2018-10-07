@@ -1,4 +1,5 @@
 (require 'use-package)
+
 (use-package evil
   :ensure t
   :init
@@ -7,4 +8,5 @@
     :ensure t
     :init
     (global-evil-surround-mode 1)))
+
 (provide 'setup-evil)

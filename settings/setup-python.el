@@ -23,4 +23,21 @@
   :config
   (pyenv-mode))
 
+(use-package flycheck
+  :ensure t
+  :config
+  (defun flycheck-load-config ()
+    (set-face-attribute 'flycheck-warning nil
+                        :foreground "black"
+                        :background "yellow"
+                        :underline nil)
+    (set-face-attribute 'flycheck-error nil
+                        :foreground "black"
+                        :background "red"
+                        :underline nil))
+  (add-hook 'flycheck-mode-hook 'flycheck-load-config)
+  (add-hook 'python-mode-hook #'(lambda () (setq flycheck-checker 'python-pylint)))
+  :init
+  (global-flycheck-mode))
+
 (provide 'setup-python)

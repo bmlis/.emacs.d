@@ -1,15 +1,13 @@
 (progn
   (require 'setup-packages)
-  (require 'better-defaults)
-  (require 'setup-programing)
-  ;; (require 'setup-evil)
-  (require 'setup-theme)
-  (require 'setup-editorconfig)
-  (require 'setup-mode-line)
   (require 'setup-ivy)
+  (require 'setup-ux)
+  (require 'setup-editor)
+  (require 'setup-evil)
   (require 'setup-projectile)
   (require 'setup-magit)
   (require 'setup-company)
+  ;; skonczyles tu
   (require 'setup-python)
   (require 'setup-clojure)
   (require 'setup-js)
@@ -17,7 +15,6 @@
   ;; (require 'setup-cl)
   ;; (require 'setup-scheme)
   ;; (require 'setup-nlinum)
-  (require 'setup-ace-window)
   (require 'setup-which-key))
 
 (provide 'settings)

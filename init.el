@@ -23,7 +23,6 @@
       `((".*" ,temporary-file-directory t)))
 
 (setq vc-handled-backends ())
-
 (global-unset-key (kbd "C-z"))
 
 (fringe-helper-define 'git-gutter-fr:modified nil
