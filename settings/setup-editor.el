@@ -5,14 +5,22 @@
   :ensure t
   :diminish smartparens-mode
   :init
-  (use-package evil-smartparens
-    :load-path "site-lisp/evil-smartparens"
-    :diminish evil-smartparens-mode
-    :config (add-hook 'smartparens-enabled-hook #'evil-smartparens-mode))
   (use-package smartparens-config
     :init
     (smartparens-global-mode)
     (show-smartparens-global-mode)))
+
+(use-package evil-smartparens
+    :diminish evil-smartparens-mode
+    :config (add-hook 'smartparens-enabled-hook #'evil-smartparens-mode))
+
+(use-package lsp-mode
+  :ensure t
+  :config
+  (use-package company-lsp
+    :ensure t
+    :config
+    (push 'company-lsp company-backends)))
 
 (use-package eldoc
   :init
@@ -35,4 +43,8 @@
   :init
   (editorconfig-mode 1))
 
+(use-package which-key
+  :ensure t
+  :init
+  (which-key-mode 1))
 (provide 'setup-editor)

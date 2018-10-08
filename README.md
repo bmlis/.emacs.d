@@ -14,6 +14,10 @@ Cool mono theme
 ### Smartparens
 Basically smarter parens, wrapping, unwrapping, rewrapping, matching parens etc.
 
+``` bash
+jkk
+```
+
 #### evil-smartparens
 Same but for evil-mode
 
@@ -79,3 +83,13 @@ Welp, magit.
 
 ### Company
 Completion for programming
+
+### Emmet
+HTML code expansion with `C-j`
+
+### Which-key
+Displays possible key combinations that can follow current one
+
+``` bash
+npm i -g javascript-typescript-langserver
+```
