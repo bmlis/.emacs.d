@@ -9,4 +9,10 @@
     :init
     (global-evil-surround-mode 1)))
 
+(use-package evil-smartparens
+  :defer t
+  :ensure t
+  :init
+  (add-hook 'smartparens-enabled-hook #'evil-smartparens-mode))
+
 (provide 'setup-evil)

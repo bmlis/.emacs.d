@@ -10,9 +10,11 @@
     (smartparens-global-mode)
     (show-smartparens-global-mode)))
 
-(use-package evil-smartparens
-    :diminish evil-smartparens-mode
-    :config (add-hook 'smartparens-enabled-hook #'evil-smartparens-mode))
+(use-package flycheck
+  :ensure t
+  :diminish flycheck-mode
+  :config
+  (add-hook 'after-init-hook #'global-flycheck-mode))
 
 (use-package lsp-mode
   :ensure t
