@@ -21,6 +21,10 @@
 (setq auto-save-file-name-transforms
       `((".*" ,temporary-file-directory t)))
 
+;; Turn of js2-mode warnings, we are using flycheck
+(setq js2-mode-show-parse-errors nil)
+(setq js2-mode-show-strict-warnings nil)
+
 (setq vc-handled-backends ())
 (global-unset-key (kbd "C-z"))
 
